@@ -14,6 +14,11 @@
 		0D80156028FF1781008DA6A7 /* DuoStreakTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D80155F28FF1781008DA6A7 /* DuoStreakTests.swift */; };
 		0D80156A28FF1781008DA6A7 /* DuoStreakUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D80156928FF1781008DA6A7 /* DuoStreakUITests.swift */; };
 		0D80156C28FF1781008DA6A7 /* DuoStreakUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D80156B28FF1781008DA6A7 /* DuoStreakUITestsLaunchTests.swift */; };
+		0D80157F28FF30CB008DA6A7 /* DuoStreakWatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D80157E28FF30CB008DA6A7 /* DuoStreakWatchApp.swift */; };
+		0D80158128FF30CB008DA6A7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D80158028FF30CB008DA6A7 /* ContentView.swift */; };
+		0D80158328FF30CD008DA6A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D80158228FF30CD008DA6A7 /* Assets.xcassets */; };
+		0D80158628FF30CD008DA6A7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D80158528FF30CD008DA6A7 /* Preview Assets.xcassets */; };
+		0D80158F28FF361E008DA6A7 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D80158E28FF361E008DA6A7 /* ComplicationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +49,12 @@
 		0D80156528FF1781008DA6A7 /* DuoStreakUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DuoStreakUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D80156928FF1781008DA6A7 /* DuoStreakUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuoStreakUITests.swift; sourceTree = "<group>"; };
 		0D80156B28FF1781008DA6A7 /* DuoStreakUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuoStreakUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0D80157C28FF30CB008DA6A7 /* DuoStreakWatch Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DuoStreakWatch Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D80157E28FF30CB008DA6A7 /* DuoStreakWatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuoStreakWatchApp.swift; sourceTree = "<group>"; };
+		0D80158028FF30CB008DA6A7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0D80158228FF30CD008DA6A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0D80158528FF30CD008DA6A7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0D80158E28FF361E008DA6A7 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +79,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0D80157928FF30CB008DA6A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -77,6 +95,7 @@
 				0D80154D28FF177F008DA6A7 /* DuoStreak */,
 				0D80155E28FF1781008DA6A7 /* DuoStreakTests */,
 				0D80156828FF1781008DA6A7 /* DuoStreakUITests */,
+				0D80157D28FF30CB008DA6A7 /* DuoStreakWatch Watch App */,
 				0D80154C28FF177F008DA6A7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -87,6 +106,7 @@
 				0D80154B28FF177F008DA6A7 /* DuoStreak.app */,
 				0D80155B28FF1781008DA6A7 /* DuoStreakTests.xctest */,
 				0D80156528FF1781008DA6A7 /* DuoStreakUITests.xctest */,
+				0D80157C28FF30CB008DA6A7 /* DuoStreakWatch Watch App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -125,6 +145,26 @@
 				0D80156B28FF1781008DA6A7 /* DuoStreakUITestsLaunchTests.swift */,
 			);
 			path = DuoStreakUITests;
+			sourceTree = "<group>";
+		};
+		0D80157D28FF30CB008DA6A7 /* DuoStreakWatch Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				0D80158E28FF361E008DA6A7 /* ComplicationController.swift */,
+				0D80157E28FF30CB008DA6A7 /* DuoStreakWatchApp.swift */,
+				0D80158028FF30CB008DA6A7 /* ContentView.swift */,
+				0D80158228FF30CD008DA6A7 /* Assets.xcassets */,
+				0D80158428FF30CD008DA6A7 /* Preview Content */,
+			);
+			path = "DuoStreakWatch Watch App";
+			sourceTree = "<group>";
+		};
+		0D80158428FF30CD008DA6A7 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				0D80158528FF30CD008DA6A7 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,6 +223,23 @@
 			productReference = 0D80156528FF1781008DA6A7 /* DuoStreakUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		0D80157B28FF30CB008DA6A7 /* DuoStreakWatch Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0D80158728FF30CD008DA6A7 /* Build configuration list for PBXNativeTarget "DuoStreakWatch Watch App" */;
+			buildPhases = (
+				0D80157828FF30CB008DA6A7 /* Sources */,
+				0D80157928FF30CB008DA6A7 /* Frameworks */,
+				0D80157A28FF30CB008DA6A7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "DuoStreakWatch Watch App";
+			productName = "DuoStreakWatch Watch App";
+			productReference = 0D80157C28FF30CB008DA6A7 /* DuoStreakWatch Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -204,6 +261,9 @@
 						CreatedOnToolsVersion = 14.0;
 						TestTargetID = 0D80154A28FF177F008DA6A7;
 					};
+					0D80157B28FF30CB008DA6A7 = {
+						CreatedOnToolsVersion = 14.0;
+					};
 				};
 			};
 			buildConfigurationList = 0D80154628FF177F008DA6A7 /* Build configuration list for PBXProject "DuoStreak" */;
@@ -222,6 +282,7 @@
 				0D80154A28FF177F008DA6A7 /* DuoStreak */,
 				0D80155A28FF1781008DA6A7 /* DuoStreakTests */,
 				0D80156428FF1781008DA6A7 /* DuoStreakUITests */,
+				0D80157B28FF30CB008DA6A7 /* DuoStreakWatch Watch App */,
 			);
 		};
 /* End PBXProject section */
@@ -247,6 +308,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D80157A28FF30CB008DA6A7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D80158628FF30CD008DA6A7 /* Preview Assets.xcassets in Resources */,
+				0D80158328FF30CD008DA6A7 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,6 +346,16 @@
 			files = (
 				0D80156A28FF1781008DA6A7 /* DuoStreakUITests.swift in Sources */,
 				0D80156C28FF1781008DA6A7 /* DuoStreakUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D80157828FF30CB008DA6A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D80158128FF30CB008DA6A7 /* ContentView.swift in Sources */,
+				0D80157F28FF30CB008DA6A7 /* DuoStreakWatchApp.swift in Sources */,
+				0D80158F28FF361E008DA6A7 /* ComplicationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -543,6 +623,68 @@
 			};
 			name = Release;
 		};
+		0D80158828FF30CD008DA6A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DuoStreakWatch Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = GMK7C2ZQG9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "DuoStreakWatch-Watch-App-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = DuoStreakWatch;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = .watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
+		0D80158928FF30CD008DA6A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DuoStreakWatch Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = GMK7C2ZQG9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "DuoStreakWatch-Watch-App-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = DuoStreakWatch;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = .watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -578,6 +720,15 @@
 			buildConfigurations = (
 				0D80157628FF1781008DA6A7 /* Debug */,
 				0D80157728FF1781008DA6A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0D80158728FF30CD008DA6A7 /* Build configuration list for PBXNativeTarget "DuoStreakWatch Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D80158828FF30CD008DA6A7 /* Debug */,
+				0D80158928FF30CD008DA6A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
