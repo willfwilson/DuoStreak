@@ -19,6 +19,13 @@
 		0D80158328FF30CD008DA6A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D80158228FF30CD008DA6A7 /* Assets.xcassets */; };
 		0D80158628FF30CD008DA6A7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D80158528FF30CD008DA6A7 /* Preview Assets.xcassets */; };
 		0D80158F28FF361E008DA6A7 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D80158E28FF361E008DA6A7 /* ComplicationController.swift */; };
+		0D801598290059ED008DA6A7 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D801597290059ED008DA6A7 /* WidgetKit.framework */; };
+		0D80159A290059ED008DA6A7 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D801599290059ED008DA6A7 /* SwiftUI.framework */; };
+		0D80159D290059ED008DA6A7 /* DuoStreak_Complication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D80159C290059ED008DA6A7 /* DuoStreak_Complication.swift */; };
+		0D8015A0290059EF008DA6A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D80159F290059EF008DA6A7 /* Assets.xcassets */; };
+		0D8015A2290059EF008DA6A7 /* DuoStreak_Complication.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 0D80159E290059ED008DA6A7 /* DuoStreak_Complication.intentdefinition */; };
+		0D8015A3290059EF008DA6A7 /* DuoStreak_Complication.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 0D80159E290059ED008DA6A7 /* DuoStreak_Complication.intentdefinition */; };
+		0D8015A6290059EF008DA6A7 /* DuoStreak ComplicationExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 0D801595290059ED008DA6A7 /* DuoStreak ComplicationExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +43,28 @@
 			remoteGlobalIDString = 0D80154A28FF177F008DA6A7;
 			remoteInfo = DuoStreak;
 		};
+		0D8015A4290059EF008DA6A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0D80154328FF177F008DA6A7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0D801594290059ED008DA6A7;
+			remoteInfo = "DuoStreak ComplicationExtension";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0D8015AA290059EF008DA6A7 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				0D8015A6290059EF008DA6A7 /* DuoStreak ComplicationExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0D80154B28FF177F008DA6A7 /* DuoStreak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DuoStreak.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -55,6 +83,13 @@
 		0D80158228FF30CD008DA6A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0D80158528FF30CD008DA6A7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0D80158E28FF361E008DA6A7 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		0D801595290059ED008DA6A7 /* DuoStreak ComplicationExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "DuoStreak ComplicationExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D801597290059ED008DA6A7 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		0D801599290059ED008DA6A7 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		0D80159C290059ED008DA6A7 /* DuoStreak_Complication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuoStreak_Complication.swift; sourceTree = "<group>"; };
+		0D80159E290059ED008DA6A7 /* DuoStreak_Complication.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = DuoStreak_Complication.intentdefinition; sourceTree = "<group>"; };
+		0D80159F290059EF008DA6A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0D8015A1290059EF008DA6A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,16 +121,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0D801592290059ED008DA6A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D80159A290059ED008DA6A7 /* SwiftUI.framework in Frameworks */,
+				0D801598290059ED008DA6A7 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		0D80154228FF177F008DA6A7 = {
 			isa = PBXGroup;
 			children = (
+				0D80159B290059ED008DA6A7 /* DuoStreak Complication */,
 				0D80154D28FF177F008DA6A7 /* DuoStreak */,
 				0D80155E28FF1781008DA6A7 /* DuoStreakTests */,
 				0D80156828FF1781008DA6A7 /* DuoStreakUITests */,
 				0D80157D28FF30CB008DA6A7 /* DuoStreakWatch Watch App */,
+				0D801596290059ED008DA6A7 /* Frameworks */,
 				0D80154C28FF177F008DA6A7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -107,6 +153,7 @@
 				0D80155B28FF1781008DA6A7 /* DuoStreakTests.xctest */,
 				0D80156528FF1781008DA6A7 /* DuoStreakUITests.xctest */,
 				0D80157C28FF30CB008DA6A7 /* DuoStreakWatch Watch App.app */,
+				0D801595290059ED008DA6A7 /* DuoStreak ComplicationExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -165,6 +212,26 @@
 				0D80158528FF30CD008DA6A7 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0D801596290059ED008DA6A7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0D801597290059ED008DA6A7 /* WidgetKit.framework */,
+				0D801599290059ED008DA6A7 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0D80159B290059ED008DA6A7 /* DuoStreak Complication */ = {
+			isa = PBXGroup;
+			children = (
+				0D80159C290059ED008DA6A7 /* DuoStreak_Complication.swift */,
+				0D80159E290059ED008DA6A7 /* DuoStreak_Complication.intentdefinition */,
+				0D80159F290059EF008DA6A7 /* Assets.xcassets */,
+				0D8015A1290059EF008DA6A7 /* Info.plist */,
+			);
+			path = "DuoStreak Complication";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,15 +297,34 @@
 				0D80157828FF30CB008DA6A7 /* Sources */,
 				0D80157928FF30CB008DA6A7 /* Frameworks */,
 				0D80157A28FF30CB008DA6A7 /* Resources */,
+				0D8015AA290059EF008DA6A7 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				0D8015A5290059EF008DA6A7 /* PBXTargetDependency */,
 			);
 			name = "DuoStreakWatch Watch App";
 			productName = "DuoStreakWatch Watch App";
 			productReference = 0D80157C28FF30CB008DA6A7 /* DuoStreakWatch Watch App.app */;
 			productType = "com.apple.product-type.application";
+		};
+		0D801594290059ED008DA6A7 /* DuoStreak ComplicationExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0D8015A7290059EF008DA6A7 /* Build configuration list for PBXNativeTarget "DuoStreak ComplicationExtension" */;
+			buildPhases = (
+				0D801591290059ED008DA6A7 /* Sources */,
+				0D801592290059ED008DA6A7 /* Frameworks */,
+				0D801593290059ED008DA6A7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "DuoStreak ComplicationExtension";
+			productName = "DuoStreak ComplicationExtension";
+			productReference = 0D801595290059ED008DA6A7 /* DuoStreak ComplicationExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -264,6 +350,9 @@
 					0D80157B28FF30CB008DA6A7 = {
 						CreatedOnToolsVersion = 14.0;
 					};
+					0D801594290059ED008DA6A7 = {
+						CreatedOnToolsVersion = 14.0;
+					};
 				};
 			};
 			buildConfigurationList = 0D80154628FF177F008DA6A7 /* Build configuration list for PBXProject "DuoStreak" */;
@@ -283,6 +372,7 @@
 				0D80155A28FF1781008DA6A7 /* DuoStreakTests */,
 				0D80156428FF1781008DA6A7 /* DuoStreakUITests */,
 				0D80157B28FF30CB008DA6A7 /* DuoStreakWatch Watch App */,
+				0D801594290059ED008DA6A7 /* DuoStreak ComplicationExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -317,6 +407,14 @@
 			files = (
 				0D80158628FF30CD008DA6A7 /* Preview Assets.xcassets in Resources */,
 				0D80158328FF30CD008DA6A7 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D801593290059ED008DA6A7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D8015A0290059EF008DA6A7 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,6 +454,16 @@
 				0D80158128FF30CB008DA6A7 /* ContentView.swift in Sources */,
 				0D80157F28FF30CB008DA6A7 /* DuoStreakWatchApp.swift in Sources */,
 				0D80158F28FF361E008DA6A7 /* ComplicationController.swift in Sources */,
+				0D8015A3290059EF008DA6A7 /* DuoStreak_Complication.intentdefinition in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D801591290059ED008DA6A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D80159D290059ED008DA6A7 /* DuoStreak_Complication.swift in Sources */,
+				0D8015A2290059EF008DA6A7 /* DuoStreak_Complication.intentdefinition in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -371,6 +479,11 @@
 			isa = PBXTargetDependency;
 			target = 0D80154A28FF177F008DA6A7 /* DuoStreak */;
 			targetProxy = 0D80156628FF1781008DA6A7 /* PBXContainerItemProxy */;
+		};
+		0D8015A5290059EF008DA6A7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0D801594290059ED008DA6A7 /* DuoStreak ComplicationExtension */;
+			targetProxy = 0D8015A4290059EF008DA6A7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -626,6 +739,7 @@
 		0D80158828FF30CD008DA6A7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -657,6 +771,7 @@
 		0D80158928FF30CD008DA6A7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -675,6 +790,66 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = .watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Release;
+		};
+		0D8015A8290059EF008DA6A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GMK7C2ZQG9;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "DuoStreak Complication/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "DuoStreak Complication";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ".watchkitapp.DuoStreak-Complication";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
+		0D8015A9290059EF008DA6A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GMK7C2ZQG9;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "DuoStreak Complication/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "DuoStreak Complication";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ".watchkitapp.DuoStreak-Complication";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -729,6 +904,15 @@
 			buildConfigurations = (
 				0D80158828FF30CD008DA6A7 /* Debug */,
 				0D80158928FF30CD008DA6A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0D8015A7290059EF008DA6A7 /* Build configuration list for PBXNativeTarget "DuoStreak ComplicationExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D8015A8290059EF008DA6A7 /* Debug */,
+				0D8015A9290059EF008DA6A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

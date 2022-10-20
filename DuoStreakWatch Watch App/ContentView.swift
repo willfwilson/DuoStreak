@@ -9,7 +9,7 @@ import SwiftUI
 
 
 
-let myURLString = "https://duome.eu/Arayme"
+let myURLString = "https://duome.eu/willfw"
 
 
 struct GrowingButton: ButtonStyle {
@@ -62,7 +62,7 @@ struct ContentView: View {
                 .flatMap { String(data: $0, encoding: .ascii) }
             
     //            print(type(of: myHTMLString))
-
+        https://duome.eu/Arayme
             if (myHTMLString!.contains("streak extended today")) {
                 imageName = "Streak_FulfilledColour"
     //                Image("Streak_FulfilledColour").imageScale(.small)

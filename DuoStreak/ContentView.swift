@@ -10,7 +10,7 @@ import SwiftUI
 
 
 
-let myURLString = "https://duome.eu/Arayme"
+let myURLString = "https://duome.eu/willfw"
 
 struct GrowingButton: ButtonStyle {
     func makeBody(configuration: Configuration) -> some View {
