@@ -19,7 +19,7 @@ struct Provider: TimelineProvider {
     
     let myURLString = "https://duome.eu/willfw"
     var initialisor = 0
-//    let myURLString = "https://duome.eu/christi3"
+ //   let myURLString = "https://duome.eu/christi3"
 // let myURLString = "https://duome.eu/DeeRamm"
 //    let myURLString = "https://duome.eu/Sarah404234"
     static var imageName = "Streak_Unfulfilled"
@@ -31,9 +31,9 @@ struct Provider: TimelineProvider {
     
     func getSnapshot(in context: Context, completion: @escaping (Entry) -> Void) {
         
-        DispatchQueue.main.sync{
-        
-        
+//        DispatchQueue.main.sync{
+//
+//
         let date = Date()
         
         var entry: StreakEntry
@@ -67,13 +67,13 @@ struct Provider: TimelineProvider {
 //            }
             
             //        }
-            //        if context.isPreview && !hasFetchedStreak {
+//                    if context.isPreview && !hasFetchedStreak {
             //            entry = StreakEntry(date: date, StreakStatus: "-")
             //        } else {
             
             //        }
             completion(entry)
-        }
+//        }
     }
     
     
@@ -88,34 +88,69 @@ struct Provider: TimelineProvider {
 //        }
 //        Provider.initial = 1
         
-        let myHTMLString = try! URL(string: myURLString)
-
-            .flatMap { try! Data(contentsOf: $0) }
-
-            .flatMap { String(data: $0, encoding: .ascii) }
-
-        //            print(type(of: myHTMLString))
         
-        if (myHTMLString!.contains("streak extended today")) {
-            Provider.imageName = "Streak_FulfilledColour"
+        let url = NSURL(string: myURLString)
+
+        let task = URLSession.shared.dataTask(with: url! as URL) {
+            (data, response, error) in
+            
+//                var urlContent = NSString(data: data!, encoding: NSASCIIStringEncoding)
+//                print(urlContent as Any)
+            if error == nil {
+                
+                let myHTMLString = String(data: data!, encoding: .ascii)
+                
+                print(myHTMLString as Any)
+                
+                if (myHTMLString!.contains("streak extended today")) {
+                    Provider.imageName = "Streak_FulfilledColour"
             //                Image("Streak_FulfilledColour").imageScale(.small)
+                        print("streak extended")
+                        
+                        
 
-            print("streak extended")
-//                Provider.test = "Streak_FulfilledColour"
+                    } else {
+//                        ContentView.streak = false
+                        Provider.imageName = "Streak_Unfulfilled"
+                        print("streak not extended")
+                        
+                        
 
-
-
-
-        } else {
-            //                ContentView.streak = false
-            Provider.imageName = "Streak_Unfulfilled"
-            print("streak not extended")
-//                Provider.test = "Streak_FulfilledColour"
-
-
-
-
+                    }
+            }
+            
+            
         }
+        
+        
+//        let myHTMLString = try! URL(string: myURLString)
+//
+//            .flatMap { try! Data(contentsOf: $0) }
+//
+//            .flatMap { String(data: $0, encoding: .ascii) }
+//
+//        //            print(type(of: myHTMLString))
+//
+//        if (myHTMLString!.contains("streak extended today")) {
+//            Provider.imageName = "Streak_FulfilledColour"
+//            //                Image("Streak_FulfilledColour").imageScale(.small)
+//
+//            print("streak extended")
+////                Provider.test = "Streak_FulfilledColour"
+//
+//
+//
+//
+//        } else {
+//            //                ContentView.streak = false
+//            Provider.imageName = "Streak_Unfulfilled"
+//            print("streak not extended")
+////                Provider.test = "Streak_FulfilledColour"
+//
+//
+//
+//
+//        }
         
         let entry = StreakEntry(
             date: date,
@@ -134,6 +169,8 @@ struct Provider: TimelineProvider {
             policy: .after(nextUpdateDate)
         )
         print(timeline as Any)
+        
+        task.resume()
 //        WidgetCenter.shared.reloadAllTimelines()
 //
 //        DispatchQueue.global(qos: .background).async {
@@ -213,7 +250,7 @@ struct DuoStreak_Complication: Widget {
 
 struct DuoStreak_ComplicationEntryView : View {
     //    var entry: Provider.Entry
-    //    @Environment(\.widgetFamily) var family: WidgetFamily
+    @Environment(\.widgetFamily) var family: WidgetFamily
     @State var streakIcon: String!
     //    var StreakIcon = "Streak_FulfilledWhite"
     //    var StreakIcon = "Streak_Unfulfilled"

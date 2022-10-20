@@ -19,13 +19,12 @@
 		0D80158328FF30CD008DA6A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D80158228FF30CD008DA6A7 /* Assets.xcassets */; };
 		0D80158628FF30CD008DA6A7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D80158528FF30CD008DA6A7 /* Preview Assets.xcassets */; };
 		0D80158F28FF361E008DA6A7 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D80158E28FF361E008DA6A7 /* ComplicationController.swift */; };
-		0D801598290059ED008DA6A7 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D801597290059ED008DA6A7 /* WidgetKit.framework */; };
-		0D80159A290059ED008DA6A7 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D801599290059ED008DA6A7 /* SwiftUI.framework */; };
 		0D80159D290059ED008DA6A7 /* DuoStreak_Complication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D80159C290059ED008DA6A7 /* DuoStreak_Complication.swift */; };
 		0D8015A0290059EF008DA6A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D80159F290059EF008DA6A7 /* Assets.xcassets */; };
 		0D8015A2290059EF008DA6A7 /* DuoStreak_Complication.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 0D80159E290059ED008DA6A7 /* DuoStreak_Complication.intentdefinition */; };
 		0D8015A3290059EF008DA6A7 /* DuoStreak_Complication.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 0D80159E290059ED008DA6A7 /* DuoStreak_Complication.intentdefinition */; };
-		0D8015A6290059EF008DA6A7 /* DuoStreak ComplicationExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 0D801595290059ED008DA6A7 /* DuoStreak ComplicationExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		0D8015C329018323008DA6A7 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D801599290059ED008DA6A7 /* SwiftUI.framework */; };
+		0D8015C629018325008DA6A7 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D801597290059ED008DA6A7 /* WidgetKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,28 +42,7 @@
 			remoteGlobalIDString = 0D80154A28FF177F008DA6A7;
 			remoteInfo = DuoStreak;
 		};
-		0D8015A4290059EF008DA6A7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0D80154328FF177F008DA6A7 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 0D801594290059ED008DA6A7;
-			remoteInfo = "DuoStreak ComplicationExtension";
-		};
 /* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		0D8015AA290059EF008DA6A7 /* Embed Foundation Extensions */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 13;
-			files = (
-				0D8015A6290059EF008DA6A7 /* DuoStreak ComplicationExtension.appex in Embed Foundation Extensions */,
-			);
-			name = "Embed Foundation Extensions";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0D80154B28FF177F008DA6A7 /* DuoStreak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DuoStreak.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -125,8 +103,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0D80159A290059ED008DA6A7 /* SwiftUI.framework in Frameworks */,
-				0D801598290059ED008DA6A7 /* WidgetKit.framework in Frameworks */,
+				0D8015C329018323008DA6A7 /* SwiftUI.framework in Frameworks */,
+				0D8015C629018325008DA6A7 /* WidgetKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,12 +275,10 @@
 				0D80157828FF30CB008DA6A7 /* Sources */,
 				0D80157928FF30CB008DA6A7 /* Frameworks */,
 				0D80157A28FF30CB008DA6A7 /* Resources */,
-				0D8015AA290059EF008DA6A7 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				0D8015A5290059EF008DA6A7 /* PBXTargetDependency */,
 			);
 			name = "DuoStreakWatch Watch App";
 			productName = "DuoStreakWatch Watch App";
@@ -479,11 +455,6 @@
 			isa = PBXTargetDependency;
 			target = 0D80154A28FF177F008DA6A7 /* DuoStreak */;
 			targetProxy = 0D80156628FF1781008DA6A7 /* PBXContainerItemProxy */;
-		};
-		0D8015A5290059EF008DA6A7 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 0D801594290059ED008DA6A7 /* DuoStreak ComplicationExtension */;
-			targetProxy = 0D8015A4290059EF008DA6A7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -739,25 +710,26 @@
 		0D80158828FF30CD008DA6A7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"DuoStreakWatch Watch App/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "DuoStreak\\ Complication/Assets.xcassets DuoStreakWatch\\ Watch\\ App/Assets.xcassets DuoStreakWatch\\ Watch\\ App/Preview\\ Content";
 				DEVELOPMENT_TEAM = GMK7C2ZQG9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "DuoStreakWatch-Watch-App-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = DuoStreakWatch;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.example.willwilson.DuoStreak;
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = .watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.willwilson.DuoStreak.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -771,25 +743,26 @@
 		0D80158928FF30CD008DA6A7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"DuoStreakWatch Watch App/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "DuoStreak\\ Complication/Assets.xcassets DuoStreakWatch\\ Watch\\ App/Assets.xcassets DuoStreakWatch\\ Watch\\ App/Preview\\ Content";
 				DEVELOPMENT_TEAM = GMK7C2ZQG9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "DuoStreakWatch-Watch-App-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = DuoStreakWatch;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.example.willwilson.DuoStreak;
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = .watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.willwilson.DuoStreak.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -807,6 +780,7 @@
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "DuoStreak\\ Complication/Assets.xcassets";
 				DEVELOPMENT_TEAM = GMK7C2ZQG9;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "DuoStreak Complication/Info.plist";
@@ -819,7 +793,7 @@
 					"@executable_path/../../../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = ".watchkitapp.DuoStreak-Complication";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.willwilson.DuoStreak.watchkitapp.DuoStreak-Complication";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -837,6 +811,7 @@
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "DuoStreak\\ Complication/Assets.xcassets";
 				DEVELOPMENT_TEAM = GMK7C2ZQG9;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "DuoStreak Complication/Info.plist";
@@ -849,7 +824,7 @@
 					"@executable_path/../../../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = ".watchkitapp.DuoStreak-Complication";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.willwilson.DuoStreak.watchkitapp.DuoStreak-Complication";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;

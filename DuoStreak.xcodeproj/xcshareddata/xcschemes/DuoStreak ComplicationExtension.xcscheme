@@ -61,12 +61,21 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
+            BlueprintIdentifier = "0D801594290059ED008DA6A7"
+            BuildableName = "DuoStreak ComplicationExtension.appex"
+            BlueprintName = "DuoStreak ComplicationExtension"
+            ReferencedContainer = "container:DuoStreak.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
             BlueprintIdentifier = "0D80157B28FF30CB008DA6A7"
             BuildableName = "DuoStreakWatch Watch App.app"
             BlueprintName = "DuoStreakWatch Watch App"
             ReferencedContainer = "container:DuoStreak.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
       <EnvironmentVariables>
          <EnvironmentVariable
             key = "_XCWidgetKind"
